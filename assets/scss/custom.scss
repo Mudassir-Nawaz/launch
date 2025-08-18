@@ -1,0 +1,133 @@
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+
+$custom-colors: (
+  "light-green": #00CED1,
+  "deep-navy": #05092E,
+  "slate": #F5F5F5,
+  "gray-text": #3C3C3C,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$custom-font-sizes: (
+  70: 70px,
+  18: 18px,
+  40: 40px,
+  48: 48px,
+  24: 24px
+);
+
+$font-sizes: map-merge($font-sizes, $custom-font-sizes);
+
+$spacers: map-merge(
+  $spacers,
+  (
+    30: 30px,
+    60: 60px,
+    34: 34px,
+    12: 12px,
+    24: 24px,
+    20: 20px,
+    10: 10px,
+    53: 53px,
+    70: 70px,
+    14: 14px,
+    120: 200px,
+    90: 90px,
+    40: 40px,
+    50: 50px
+  )
+);
+
+@import "../bootstrap/scss/maps";
+@import "../bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          (
+            69: 69px,
+            207: 207px,
+            188: 188px,
+            178: 178px,
+            29: 29px
+          )
+        ),
+      ),
+    ),
+    "height": map-merge(
+      map-get($utilities, "height"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "height"), "values"),
+          (
+            185: 185px,
+            59: 59px,
+            29: 29px
+          )
+        ),
+      ),
+    ),
+    "line-height": map-merge(
+      map-get($utilities, "line-height"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "line-height"), "values"),
+          (
+            110: 110%,
+            24: 24px,
+            56: 56px,
+            32: 32px
+          )
+        ),
+      ),
+    ),
+    "font-family": (
+      property: font-family,
+      class: font,
+      values: (
+        primary: ("Inter", "sans-serif"),
+        secondary: ("Poppins", "sans-serif"),
+      )
+    ),
+  )
+); 
+
+$btn-border-radius: calc(infinity * 1px);
+$btn-padding-x: 24px;
+$btn-padding-y: 12px;
+$btn-font-size: 18px;
+$btn-font-weight: 500;
+$btn-font-family: var(--bs-font-secondary);
+
+$enable-gradients: true;
+
+@import "../bootstrap/scss/bootstrap";
+
+.btn {
+  color: var(--bs-deep-navy);
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(#FFFFFF, #323232);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mb-n16 {
+  margin-bottom: -16px;
+}
+
+.mb-n12 {
+  margin-bottom: -12px;
+}
+
+* {
+  outline: 1px solid red;
+}
