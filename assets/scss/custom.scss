@@ -15,7 +15,8 @@ $custom-font-sizes: (
   18: 18px,
   40: 40px,
   48: 48px,
-  24: 24px
+  24: 24px,
+  32: 32px
 );
 
 $font-sizes: map-merge($font-sizes, $custom-font-sizes);
@@ -36,7 +37,10 @@ $spacers: map-merge(
     120: 200px,
     90: 90px,
     40: 40px,
-    50: 50px
+    50: 50px,
+    25: 25px,
+    8: 8px,
+    32: 32px,
   )
 );
 
@@ -120,14 +124,16 @@ $enable-gradients: true;
   -webkit-text-fill-color: transparent;
 }
 
+.bg-navy-green-responsive {
+  background: linear-gradient(to right, #05092E, #00CED1);
+}
+
 .mb-n16 {
   margin-bottom: -16px;
 }
 
-.mb-n12 {
-  margin-bottom: -12px;
+@media (max-width: 1024px) {
+  .bg-navy-green-responsive {
+  background: linear-gradient(to bottom, #05092E, #00CED1);
 }
-
-* {
-  outline: 1px solid red;
 }
