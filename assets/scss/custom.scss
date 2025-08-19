@@ -6,6 +6,7 @@ $custom-colors: (
   "deep-navy": #05092E,
   "slate": #F5F5F5,
   "gray-text": #3C3C3C,
+  "input-border": #9B9B9B,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -16,7 +17,8 @@ $custom-font-sizes: (
   40: 40px,
   48: 48px,
   24: 24px,
-  32: 32px
+  32: 32px,
+  14: 14px
 );
 
 $font-sizes: map-merge($font-sizes, $custom-font-sizes);
@@ -41,6 +43,10 @@ $spacers: map-merge(
     25: 25px,
     8: 8px,
     32: 32px,
+    35: 35px,
+    23: 23px,
+    28: 28px,
+    39: 39px
   )
 );
 
@@ -60,7 +66,8 @@ $utilities: map-merge(
             207: 207px,
             188: 188px,
             178: 178px,
-            29: 29px
+            29: 29px,
+            306: 306px
           )
         ),
       ),
@@ -73,7 +80,8 @@ $utilities: map-merge(
           (
             185: 185px,
             59: 59px,
-            29: 29px
+            29: 29px,
+            528: 528px
           )
         ),
       ),
@@ -132,8 +140,30 @@ $enable-gradients: true;
   margin-bottom: -16px;
 }
 
+.bg-lg-white {
+  background: white;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+::placeholder {
+  color: white !important;
+  opacity: 1 !important;
+}
+
+::ms-input-placeholder {
+  color: white !important;
+}
+
 @media (max-width: 1024px) {
   .bg-navy-green-responsive {
-  background: linear-gradient(to bottom, #05092E, #00CED1);
-}
+    background: linear-gradient(to bottom, #05092E, #00CED1);
+  }
+  .bg-lg-white {
+    background: none;
+  }
 }
