@@ -7,6 +7,7 @@ $custom-colors: (
   "slate": #F5F5F5,
   "gray-text": #3C3C3C,
   "input-border": #9B9B9B,
+  "lighter-green": rgba(0, 206, 209, 1),
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -46,7 +47,8 @@ $spacers: map-merge(
     35: 35px,
     23: 23px,
     28: 28px,
-    39: 39px
+    39: 39px,
+    18: 18px
   )
 );
 
@@ -67,7 +69,8 @@ $utilities: map-merge(
             188: 188px,
             178: 178px,
             29: 29px,
-            306: 306px
+            306: 306px,
+            10: 10px
           )
         ),
       ),
@@ -81,7 +84,8 @@ $utilities: map-merge(
             185: 185px,
             59: 59px,
             29: 29px,
-            528: 528px
+            528: 528px,
+            10: 10px
           )
         ),
       ),
