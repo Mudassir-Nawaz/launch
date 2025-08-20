@@ -11,25 +11,26 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/custom.css">
     <link rel="stylesheet" href="./assets/plugins/aos/aos.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper.min.css">
     <title>Launch with Dalia</title>
 </head>
 
 <body>
     <section class="bg-deep-navy position-relative overflow-hidden">
-        <img src="./static/icons/hero-bl-shape.png" alt="" class="position-absolute start-0 bottom-0">
-        <img src="./static/icons/hero-tr-shape.png" alt="" class="position-absolute end-0">
-        <header class="bg-transparent px-xl-0 py-30 container-xxl position-relative">
+        <img src="./static/icons/hero-bl-shape.png" alt="" class="position-absolute start-0 bottom-0 img-fluid">
+        <img src="./static/icons/hero-tr-shape.png" alt="" class="position-absolute end-0 img-fluid">
+        <header class="bg-transparent py-30 container-xxl position-relative">
             <nav class="h-69 d-flex justify-content-between">
                 <a href="">
                     <img src="./static/images/logo.svg" alt="" class="w-178 h-59 img-lg-fluid">
                 </a>
                 <div class="d-none d-xl-flex gap-34 align-items-center">
-                    <a href="" class="text-decoration-none text-white ">Home</a>
-                    <a href="" class="text-decoration-none text-white ">About</a>
-                    <a href="" class="text-decoration-none text-white ">The Lunch Method</a>
-                    <a href="" class="text-decoration-none text-white ">Quiz</a>
-                    <a href="" class="text-decoration-none text-white ">Testimonials</a>
-                    <a href="" class="text-decoration-none text-white ">Contact</a>
+                    <a href="/" class="text-decoration-none text-white">Home</a>
+                    <a href="#about" class="text-decoration-none text-white">About</a>
+                    <a href="#the-launch-method" class="text-decoration-none text-white">The Lunch Method</a>
+                    <a href="#quiz" class="text-decoration-none text-white">Quiz</a>
+                    <a href="#testimonials" class="text-decoration-none text-white">Testimonials</a>
+                    <a href="#footer" class="text-decoration-none text-white">Contact</a>
                 </div>
                 <div class="d-flex gap-10 gap-md-30 align-items-center">
                     <button class="btn btn-light-green d-none d-lg-block">Let's Talk</button>
@@ -65,8 +66,8 @@
         </header>
 
         <div class="pt-30 position-relative">
-            <div class="row gap-y-30">
-                <div class="col-lg-6 p-0 p-20 ps-xxl-70 pb-30 d-flex flex-column gap-30" data-aos="fade-up-right">
+            <div class="container-xxl hero p-0 p-lg-3 ms-auto mx-xxl-auto row gap-y-30">
+                <div class="col-lg-6 pb-30 d-flex flex-column gap-30" data-aos="fade-up-right">
                     <h1 class="fs-70 lh-110 text-gradient">Your Marketing Needs a Launch, Not a Lecture</h1>
                     <h4 class="text-white">Strategy with soul. Guidance with grit. Cheerleading with real chops.</h4>
                     <div class="d-flex gap-20 flex-wrap">
@@ -76,14 +77,17 @@
                         <div class="py-12 px-24 rounded-pill  border border-light-green text-light-green">Social Media Marketing</div>
                         <div class="py-12 px-24 rounded-pill  border border-light-green text-light-green">Content Creation</div>
                     </div>
-                    <img src="./static/images/curve-hero.svg" alt="" class="d-none d-lg-block mt-xl-60 w-188 h-185">
+                    <div class="position-relative d-non d-lg-flex justify-content-center align-items-center mt-xl-60 w-188 h-185">
+                        <img src="./static/icons/down-chevron.png" alt="" class="position-relative z-3">
+                        <img src="./static/icons/rounded-text.png" alt="" class="position-absolute start-0 top-0 animated-text">
+                    </div>
                 </div>
                 <div class="col-lg-6 d-flex align-items-end justify-content-end mt-60 mt-lg-0 p-0" data-aos="fade-up-left">
-                    <img src="./static/images/hero-img.png" alt="" class="img-fluid move-right">
+                    <img src="./static/images/hero-img.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
-        <div class="position-absolute w-100 mb-30 bottom-0 start-0 end-0 z-3">
+        <div class="position-absolute w-100 mb-30 bottom-0 start-0 end-0 z-3 container-xxl">
             <div class="d-flex flex-column flex-lg-row justify-content-center gap-10">
                 <button class="btn btn-light-green fs-6 w-75 mx-auto d-lg-none">Let's Grab a Virtual Cold Brew</button>
                 <button class="btn btn-light fs-6 w-75 mx-auto d-lg-none">Find Your Marketing Personality</button>
@@ -140,7 +144,7 @@
         </div>
     </section>
 
-    <section class="bg-slate py-60">
+    <section class="bg-slate py-60 scroll-margin" id="about">
         <div class="container-xxl px-0">
             <h2 class="text-deep-navy px-3" data-aos="zoom-in">Meet Dalia</h2>
             <p class="fst-italic lh-24 fs-18 text-gray-text mt-30 px-3" data-aos="zoom-in">I’ve been where you are—building something I believed in and trying to market it without getting lost in jargon or overcomplicated strategies. That’s why I created Launch with Dalia, to make marketing feel doable, strategic, and actually fun.</p>
@@ -243,7 +247,7 @@
         </div>
     </section>
 
-    <section class="mt-30 container-xxl p-0">
+    <section class="mt-30 container-xxl p-0" id="the-launch-method">
         <h2 class="fw-medium fs-48 lh-56 text-deep-navy px-4" data-aos="zoom-in">The Launch Method™ – Trivium + Lean Startup</h2>
         <p class="fs-24 lh-32 text-deep-navy mt-30 px-4" data-aos="zoom-in">Three Roads, One Launch, Infinite Lightbulb Moments Rooted in the classical Trivium, fueled by Build, Measure, Learn</p>
         <div class="container mx-auto row align-items-stretch g-24 mt-30">
@@ -282,12 +286,12 @@
             </div>
         </div>
     </section>
-    <section class="py-60 bg-slate">
+    <section class="py-60 bg-slate" id="quiz">
         <div class="container-xxl position-relative">
             <h2 class="fw-medium fs-48 lh-56 text-deep-navy col-lg-5" data-aos="zoom-in">What Kind of Marketer Are You?</h2>
             <img src="./static/images/about.png" alt="" class="img-fluid h-528 rounded-4 mt-30 object-fit-cover d-none d-lg-block">
             <img src="./static/images/about.png" alt="" class="img-fluid mt-30 rounded-4 d-lg-none" data-aos="zoom-in">
-            <div class="position-absolute px-24 py-30 shadow rounded-4 col-5 bg-slate top-0 end-0 d-none d-lg-block" data-aos="flip-up">
+            <div class="position-absolute px-24 py-20 shadow rounded-4 col-5 bg-slate top-0 end-0 d-none d-lg-block" data-aos="zoom-in-up">
                 <h4 class="fs-32 lh-40 text-deep-navy">Interesting QUIZ Awaits You</h4>
                 <p class="mt-30 fs-24 lh-32 text-deep-navy">Take our 60-second quiz to discover your marketing work style, and how we can work together without losing our minds.</p>
                 <button class="btn btn-light-green mt-30">Take the Quiz</button>
@@ -306,400 +310,202 @@
     <section class="py-60 container-xxl">
         <h2 class="fw-medium fs-48 lh-56 text-deep-navy col-lg-8 text-lg-center mx-auto" data-aos="zoom-in">Marketing that works, without doing all the work yourself</h2>
         <p class="fs-24 lh-32 text-gray-text mt-30 col-lg-10 text-lg-center mx-auto" data-aos="zoom-in">The process begins with an initial consultation where we discuss your project goals. I then provide design concepts, followed by revisions based on your feedback. Once the final design is approved, I deliver all the necessary assets.</p>
-        <div id="pricingSlider" class="carousel slide" data-aos="flip-up">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="container-xxl mx-auto mt-30 row align-item-stretch g-23">
-                        <div class="col-lg-4">
-                            <div class="card justify-content-between p-24 rounded-4 h-100">
-                                <div class="d-flex flex-column gap-12">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Editable business plan (Word or Google Docs)</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Competitive research + growth strategy</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">P&L, budget, and projection templates </span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">One round of revisions</span>
-                                    </div><div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">30-minute handoff consult</span>
-                                    </div><div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Coaching on pitching your plan or tailoring for investors</span>
-                                    </div>
+            <div class="mt-30 h-100 pricingSwiper overflow-y-visible overflow-x-hidden position-relative">
+                <div class="swiper-wrapper">
+                    <div class="col-lg-4 swiper-slide" data-aos="fade-up">
+                        <div class="card justify-content-between p-24 rounded-4 h-100 shadow">
+                            <div class="d-flex flex-column gap-12">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">Editable business plan (Word or Google Docs)</span>
                                 </div>
-                                <div>
-                                    <div class="p-12 mt-30 rounded-4 bg-slate">
-                                        <h5 class="fs-24 lh-32 text-deep-navy mb-0">Business Plan Builder</h5>
-                                        <h3 class="fs-40 lh-48 text-deep-navy mb-0 mt-30">$850/-</h3>
-                                        <p class="fs-18 lh-24 text-deep-navy mt-30">Custom plans for startups, franchises, or funding conversations</p>
-                                    </div>
-                                    <button class="btn btn-deep-navy mt-30 text-light w-100">Get Started</button>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">Competitive research + growth strategy</span>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">P&L, budget, and projection templates </span>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">One round of revisions</span>
+                                </div><div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">30-minute handoff consult</span>
+                                </div><div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">Coaching on pitching your plan or tailoring for investors</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card justify-content-between p-24 rounded-4 bg-deep-navy h-100">
-                                <div class="d-flex flex-column gap-12">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/dark-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy text-white">Content calendar with captions, themes, and hooks</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/dark-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy text-white">One lead magnet (PDF, checklist, or short guide)</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/dark-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy text-white">Optional: Voice discovery session + content review</span>
-                                    </div>
+                            <div>
+                                <div class="p-12 mt-30 rounded-4 bg-slate">
+                                    <h5 class="fs-24 lh-32 text-deep-navy mb-0">Business Plan Builder</h5>
+                                    <h3 class="fs-40 lh-48 text-deep-navy mb-0 mt-30">$850/-</h3>
+                                    <p class="fs-18 lh-24 text-deep-navy mt-30">Custom plans for startups, franchises, or funding conversations</p>
                                 </div>
-                                <div>
-                                    <div class="p-12 mt-30 rounded-4 bg-gray-text">
-                                        <h5 class="fs-24 lh-32 text-deep-navy mb-0 text-white">Content Creation Toolkit</h5>
-                                        <h3 class="fs-40 lh-48 text-deep-navy mb-0 mt-30 text-white">$675/-</h3>
-                                        <p class="fs-18 lh-24 text-deep-navy mt-30 text-white">Your brand voice, mapped out for 30, 60, or 90 days</p>
-                                    </div>
-                                    <button class="btn btn-light-green mt-30 w-100">Get Started</button>
-                                </div>
+                                <button class="btn btn-deep-navy mt-30 text-light w-100">Get Started</button>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card justify-content-between p-24 rounded-4 h-100">
-                                <div class="d-flex flex-column gap-12">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Pre-call intake + light audit of your digital presence</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">90-minute strategy call with live edits</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Action plan delivered within 24 hours</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Best: Stuck, overwhelmed, or pivoting with purpose</span>
-                                    </div>
+                    </div>
+                    <div class="col-lg-4 swiper-slide" data-aos="fade-up">
+                        <div class="card justify-content-between p-24 rounded-4 bg-deep-navy h-100 shadow">
+                            <div class="d-flex flex-column gap-12">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/dark-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy text-white">Content calendar with captions, themes, and hooks</span>
                                 </div>
-                                <div>
-                                    <div class="p-12 mt-30 rounded-4 bg-slate">
-                                        <h5 class="fs-24 lh-32 text-deep-navy mb-0">Strategy Session</h5>
-                                        <h3 class="fs-40 lh-48 text-deep-navy mb-0 mt-30">$350/-</h3>
-                                        <p class="fs-18 lh-24 text-deep-navy mt-30">A 90-minute intensive to untangle what’s not working</p>
-                                    </div>
-                                    <button class="btn btn-deep-navy mt-30 text-light w-100">Get Started</button>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/dark-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy text-white">One lead magnet (PDF, checklist, or short guide)</span>
                                 </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/dark-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy text-white">Optional: Voice discovery session + content review</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="p-12 mt-30 rounded-4 bg-gray-text">
+                                    <h5 class="fs-24 lh-32 text-deep-navy mb-0 text-white">Content Creation Toolkit</h5>
+                                    <h3 class="fs-40 lh-48 text-deep-navy mb-0 mt-30 text-white">$675/-</h3>
+                                    <p class="fs-18 lh-24 text-deep-navy mt-30 text-white">Your brand voice, mapped out for 30, 60, or 90 days</p>
+                                </div>
+                                <button class="btn btn-light-green mt-30 w-100">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 swiper-slide" data-aos="fade-up">
+                        <div class="card justify-content-between p-24 rounded-4 h-100 shadow">
+                            <div class="d-flex flex-column gap-12">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">Pre-call intake + light audit of your digital presence</span>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">90-minute strategy call with live edits</span>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">Action plan delivered within 24 hours</span>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">Best: Stuck, overwhelmed, or pivoting with purpose</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="p-12 mt-30 rounded-4 bg-slate">
+                                    <h5 class="fs-24 lh-32 text-deep-navy mb-0">Strategy Session</h5>
+                                    <h3 class="fs-40 lh-48 text-deep-navy mb-0 mt-30">$350/-</h3>
+                                    <p class="fs-18 lh-24 text-deep-navy mt-30">A 90-minute intensive to untangle what’s not working</p>
+                                </div>
+                                <button class="btn btn-deep-navy mt-30 text-light w-100">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 swiper-slide" data-aos="fade-up">
+                        <div class="card justify-content-between p-24 rounded-4 h-100 shadow">
+                            <div class="d-flex flex-column gap-12">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">Pre-call intake + light audit of your digital presence</span>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">90-minute strategy call with live edits</span>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">Action plan delivered within 24 hours</span>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <img src="./static/icons/light-check.svg" alt="">
+                                    <span class="fs-14 lh-20 text-deep-navy">Best: Stuck, overwhelmed, or pivoting with purpose</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="p-12 mt-30 rounded-4 bg-slate">
+                                    <h5 class="fs-24 lh-32 text-deep-navy mb-0">Strategy Session</h5>
+                                    <h3 class="fs-40 lh-48 text-deep-navy mb-0 mt-30">$350/-</h3>
+                                    <p class="fs-18 lh-24 text-deep-navy mt-30">A 90-minute intensive to untangle what’s not working</p>
+                                </div>
+                                <button class="btn btn-deep-navy mt-30 text-light w-100">Get Started</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="container-xxl mx-auto mt-30 row align-item-stretch g-23">
-                        <div class="col-lg-4">
-                            <div class="card justify-content-between p-24 rounded-4 h-100">
-                                <div class="d-flex flex-column gap-12">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Editable business plan (Word or Google Docs)</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Competitive research + growth strategy</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">P&L, budget, and projection templates </span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">One round of revisions</span>
-                                    </div><div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">30-minute handoff consult</span>
-                                    </div><div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Coaching on pitching your plan or tailoring for investors</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="p-12 mt-30 rounded-4 bg-slate">
-                                        <h5 class="fs-24 lh-32 text-deep-navy mb-0">Business Plan Builder</h5>
-                                        <h3 class="fs-40 lh-48 text-deep-navy mb-0 mt-30">$850/-</h3>
-                                        <p class="fs-18 lh-24 text-deep-navy mt-30">Custom plans for startups, franchises, or funding conversations</p>
-                                    </div>
-                                    <button class="btn btn-deep-navy mt-30 text-light w-100">Get Started</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card justify-content-between p-24 rounded-4 bg-deep-navy h-100">
-                                <div class="d-flex flex-column gap-12">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/dark-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy text-white">Content calendar with captions, themes, and hooks</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/dark-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy text-white">One lead magnet (PDF, checklist, or short guide)</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/dark-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy text-white">Optional: Voice discovery session + content review</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="p-12 mt-30 rounded-4 bg-gray-text">
-                                        <h5 class="fs-24 lh-32 text-deep-navy mb-0 text-white">Content Creation Toolkit</h5>
-                                        <h3 class="fs-40 lh-48 text-deep-navy mb-0 mt-30 text-white">$675/-</h3>
-                                        <p class="fs-18 lh-24 text-deep-navy mt-30 text-white">Your brand voice, mapped out for 30, 60, or 90 days</p>
-                                    </div>
-                                    <button class="btn btn-light-green mt-30 w-100">Get Started</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card justify-content-between p-24 rounded-4 h-100">
-                                <div class="d-flex flex-column gap-12">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Pre-call intake + light audit of your digital presence</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">90-minute strategy call with live edits</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Action plan delivered within 24 hours</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Best: Stuck, overwhelmed, or pivoting with purpose</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="p-12 mt-30 rounded-4 bg-slate">
-                                        <h5 class="fs-24 lh-32 text-deep-navy mb-0">Strategy Session</h5>
-                                        <h3 class="fs-40 lh-48 text-deep-navy mb-0 mt-30">$350/-</h3>
-                                        <p class="fs-18 lh-24 text-deep-navy mt-30">A 90-minute intensive to untangle what’s not working</p>
-                                    </div>
-                                    <button class="btn btn-deep-navy mt-30 text-light w-100">Get Started</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container-xxl mx-auto mt-30 row align-item-stretch g-23">
-                        <div class="col-lg-4">
-                            <div class="card justify-content-between p-24 rounded-4 h-100">
-                                <div class="d-flex flex-column gap-12">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Editable business plan (Word or Google Docs)</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Competitive research + growth strategy</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">P&L, budget, and projection templates </span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">One round of revisions</span>
-                                    </div><div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">30-minute handoff consult</span>
-                                    </div><div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Coaching on pitching your plan or tailoring for investors</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="p-12 mt-30 rounded-4 bg-slate">
-                                        <h5 class="fs-24 lh-32 text-deep-navy mb-0">Business Plan Builder</h5>
-                                        <h3 class="fs-40 lh-48 text-deep-navy mb-0 mt-30">$850/-</h3>
-                                        <p class="fs-18 lh-24 text-deep-navy mt-30">Custom plans for startups, franchises, or funding conversations</p>
-                                    </div>
-                                    <button class="btn btn-deep-navy mt-30 text-light w-100">Get Started</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card justify-content-between p-24 rounded-4 bg-deep-navy h-100">
-                                <div class="d-flex flex-column gap-12">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/dark-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy text-white">Content calendar with captions, themes, and hooks</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/dark-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy text-white">One lead magnet (PDF, checklist, or short guide)</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/dark-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy text-white">Optional: Voice discovery session + content review</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="p-12 mt-30 rounded-4 bg-gray-text">
-                                        <h5 class="fs-24 lh-32 text-deep-navy mb-0 text-white">Content Creation Toolkit</h5>
-                                        <h3 class="fs-40 lh-48 text-deep-navy mb-0 mt-30 text-white">$675/-</h3>
-                                        <p class="fs-18 lh-24 text-deep-navy mt-30 text-white">Your brand voice, mapped out for 30, 60, or 90 days</p>
-                                    </div>
-                                    <button class="btn btn-light-green mt-30 w-100">Get Started</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card justify-content-between p-24 rounded-4 h-100">
-                                <div class="d-flex flex-column gap-12">
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Pre-call intake + light audit of your digital presence</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">90-minute strategy call with live edits</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Action plan delivered within 24 hours</span>
-                                    </div>
-                                    <div class="d-flex gap-2 align-items-center">
-                                        <img src="./static/icons/light-check.svg" alt="">
-                                        <span class="fs-14 lh-20 text-deep-navy">Best: Stuck, overwhelmed, or pivoting with purpose</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="p-12 mt-30 rounded-4 bg-slate">
-                                        <h5 class="fs-24 lh-32 text-deep-navy mb-0">Strategy Session</h5>
-                                        <h3 class="fs-40 lh-48 text-deep-navy mb-0 mt-30">$350/-</h3>
-                                        <p class="fs-18 lh-24 text-deep-navy mt-30">A 90-minute intensive to untangle what’s not working</p>
-                                    </div>
-                                    <button class="btn btn-deep-navy mt-30 text-light w-100">Get Started</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-indicator mt-30 d-flex gap-18 align-items-center justify-content-center">
-                <button type="button" data-bs-target="#pricingSlider" data-bs-slide-to="0" aria-current="true" class="h-10 w-10 rounded-circle bg-light-green border-0"></button>
-                <button type="button" data-bs-target="#pricingSlider" data-bs-slide-to="1" class="h-10 w-10 rounded-circle bg-light-green border-0"></button>
-                <button type="button" data-bs-target="#pricingSlider" data-bs-slide-to="2" class="h-10 w-10 rounded-circle bg-light-green border-0"></button>
+                <div class="swiper-pagination mt-10"></div>
             </div>
         </div>
     </section>
 
-    <section class="py-lg-60 bg-slate">
+    <section class="py-lg-60 bg-slate" id="testimonials">
         <div class="bg-lg-white rounded-4 py-30 px-lg-60 container-xxl">
             <h2 class="text-lg-center fw-medium fs-48 lh-56 text-deep-navy" data-aos="zoom-in">Praise I Didn’t Pay For</h2>
-            <div id="testimSlider" class="carousel slide" data-aos="flip-up">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="mt-10 row g-30 align-items-center">
-                            <div class="col-lg-6">
-                                <div class="p-28 rounded-4 bg-deep-navy">
-                                    <div>
-                                        <img src="./static/icons/quote.svg" alt="">
-                                        <p class="mt-30 text-white fs-18 lh-24">Dalia is a passionate marketer with a wide breadth of experience and knowledge. With a go-getter attitude and a sprinkle of spunk, she is both a colleague and a good friend. I always liked working on projects with her because she executed and followed through. She would be a valuable addition to any team, especially within marketing or operations.</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-40">
-                                        <div class="d-flex justify-content-center align-items-start gap-20">
-                                            <img src="./static/icons/avatar.png" alt="">
-                                            <div>
-                                                <h5 class="fs-24 lh-32 text-white">Carl Holden</h5>
-                                                <p class="fs-18 lh-24 mt-10 text-white">CEO of Company</p>
-                                            </div>
-                                        </div>
-                                        <img src="./static/icons/rating.png" alt="">
-                                    </div>
-                                </div>
+            <div class="testimSwiper mt-30 position-relative overflow-x-hidden">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="col-lg-6 swiper-slide" data-aos="fade-up">
+                        <div class="p-28 rounded-4 bg-deep-navy">
+                            <div>
+                                <img src="./static/icons/quote.svg" alt="">
+                                <p class="mt-30 text-white fs-18 lh-24">Dalia is a passionate marketer with a wide breadth of experience and knowledge. With a go-getter attitude and a sprinkle of spunk, she is both a colleague and a good friend. I always liked working on projects with her because she executed and followed through. She would be a valuable addition to any team, especially within marketing or operations.</p>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="p-28 rounded-4 bg-deep-navy">
+                            <div class="d-flex justify-content-between align-items-center mt-40">
+                                <div class="d-flex justify-content-center align-items-start gap-20">
+                                    <img src="./static/icons/avatar.png" alt="">
                                     <div>
-                                        <img src="./static/icons/quote.svg" alt="">
-                                        <p class="mt-30 text-white fs-18 lh-24">We doubled our lead gen and finally started enjoying marketing again.</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-40">
-                                        <div class="d-flex justify-content-center align-items-start gap-20">
-                                            <img src="./static/icons/avatar.png" alt="">
-                                            <div>
-                                                <h5 class="fs-24 lh-32 text-white">Olivia Pena</h5>
-                                                <p class="fs-18 lh-24 mt-10 text-white">Quality Manager</p>
-                                            </div>
-                                        </div>
-                                        <img src="./static/icons/rating.png" alt="">
+                                        <h5 class="fs-24 lh-32 text-white">Carl Holden</h5>
+                                        <p class="fs-18 lh-24 mt-10 text-white">CEO of Company</p>
                                     </div>
                                 </div>
+                                <img src="./static/icons/rating.png" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="mt-10 row g-30 align-items-center">
-                            <div class="col-lg-6">
-                                <div class="p-28 rounded-4 bg-deep-navy">
-                                    <div>
-                                        <img src="./static/icons/quote.svg" alt="">
-                                        <p class="mt-30 text-white fs-18 lh-24">Dalia is a passionate marketer with a wide breadth of experience and knowledge. With a go-getter attitude and a sprinkle of spunk, she is both a colleague and a good friend. I always liked working on projects with her because she executed and followed through. She would be a valuable addition to any team, especially within marketing or operations.</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-40">
-                                        <div class="d-flex justify-content-center align-items-start gap-20">
-                                            <img src="./static/icons/avatar.png" alt="">
-                                            <div>
-                                                <h5 class="fs-24 lh-32 text-white">Carl Holden</h5>
-                                                <p class="fs-18 lh-24 mt-10 text-white">CEO of Company</p>
-                                            </div>
-                                        </div>
-                                        <img src="./static/icons/rating.png" alt="">
-                                    </div>
-                                </div>
+                    <div class="col-lg-6 swiper-slide" data-aos="fade-up">
+                        <div class="p-28 rounded-4 bg-deep-navy">
+                            <div>
+                                <img src="./static/icons/quote.svg" alt="">
+                                <p class="mt-30 text-white fs-18 lh-24">We doubled our lead gen and finally started enjoying marketing again.</p>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="p-28 rounded-4 bg-deep-navy">
+                            <div class="d-flex justify-content-between align-items-center mt-40">
+                                <div class="d-flex justify-content-center align-items-start gap-20">
+                                    <img src="./static/icons/avatar.png" alt="">
                                     <div>
-                                        <img src="./static/icons/quote.svg" alt="">
-                                        <p class="mt-30 text-white fs-18 lh-24">We doubled our lead gen and finally started enjoying marketing again.</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center mt-40">
-                                        <div class="d-flex justify-content-center align-items-start gap-20">
-                                            <img src="./static/icons/avatar.png" alt="">
-                                            <div>
-                                                <h5 class="fs-24 lh-32 text-white">Olivia Pena</h5>
-                                                <p class="fs-18 lh-24 mt-10 text-white">Quality Manager</p>
-                                            </div>
-                                        </div>
-                                        <img src="./static/icons/rating.png" alt="">
+                                        <h5 class="fs-24 lh-32 text-white">Olivia Pena</h5>
+                                        <p class="fs-18 lh-24 mt-10 text-white">Quality Manager</p>
                                     </div>
                                 </div>
+                                <img src="./static/icons/rating.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 swiper-slide" data-aos="fade-up">
+                        <div class="p-28 rounded-4 bg-deep-navy">
+                            <div>
+                                <img src="./static/icons/quote.svg" alt="">
+                                <p class="mt-30 text-white fs-18 lh-24">We doubled our lead gen and finally started enjoying marketing again.</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-40">
+                                <div class="d-flex justify-content-center align-items-start gap-20">
+                                    <img src="./static/icons/avatar.png" alt="">
+                                    <div>
+                                        <h5 class="fs-24 lh-32 text-white">Olivia Pena</h5>
+                                        <p class="fs-18 lh-24 mt-10 text-white">Quality Manager</p>
+                                    </div>
+                                </div>
+                                <img src="./static/icons/rating.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-indicator mt-30 d-flex gap-18 align-items-center justify-content-center">
-                    <button type="button" data-bs-target="#testimSlider" data-bs-slide-to="0" aria-current="true" class="h-10 w-10 rounded-circle bg-light-green border-0"></button>
-                    <button type="button" data-bs-target="#testimSlider" data-bs-slide-to="1" class="h-10 w-10 rounded-circle bg-light-green border-0"></button>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-deep-navy py-60 px-lg-60 position-relative">
+    <footer class="bg-deep-navy py-60 px-lg-60 position-relative" id="footer">
         <img src="./static/icons/f-left-mask.png" alt="" class="position-absolute bottom-0 start-0 img-fluid">
         <img src="./static/icons/f-right-mask.png" alt="" class="position-absolute end-0 top-0 img-fluid">
         <div class="container-xxl mx-auto p-0 row justify-content-between align-items-stretch g-60 position-relative">
@@ -728,13 +534,13 @@
                         </div>
                     </div>
                     <div class="d-flex flex-column gap-10">
-                        <a href="" class="nav-link text-white fs-18">Home</a>
-                        <a href="" class="nav-link text-white fs-18">About</a>
-                        <a href="" class="nav-link text-white fs-18">The Launch Method</a>
-                        <a href="" class="nav-link text-white fs-18">Quiz</a>
-                        <a href="" class="nav-link text-white fs-18">Services</a>
-                        <a href="" class="nav-link text-white fs-18">Testimonials</a>
-                        <a href="" class="nav-link text-white fs-18">Contact</a>
+                        <a href="/" class="nav-link text-white fs-18">Home</a>
+                        <a href="#about" class="nav-link text-white fs-18">About</a>
+                        <a href="#the-launch-method" class="nav-link text-white fs-18">The Launch Method</a>
+                        <a href="#quiz" class="nav-link text-white fs-18">Quiz</a>
+                        <a href="#the-launch-method" class="nav-link text-white fs-18">Services</a>
+                        <a href="#testimonials" class="nav-link text-white fs-18">Testimonials</a>
+                        <a href="#contact" class="nav-link text-white fs-18">Contact</a>
                     </div>
                     <img src="./static/images/logo.svg" alt="" class="w-306">
                     <p class="text-white">Copyright 2025. All Rights Reserved</p>
@@ -745,6 +551,7 @@
 
     
     <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/plugins/swiper/swiper.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

@@ -21319,6 +21319,50 @@ textarea.form-control-lg {
   color: white !important;
 }
 
+.scroll-margin {
+  scroll-margin-top: 10px;
+}
+
+.hero {
+  padding-bottom: 0 !important;
+}
+
+.pricingSwiper .swiper-wrapper .swiper-slide {
+  height: unset;
+}
+
+.pricingSwiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.swiper-pagination {
+  margin-bottom: -30px;
+}
+
+.animated-text {
+  animation: rotate360 20s linear infinite;
+}
+
+.swiper-pagination-bullet {
+  background: rgb(0, 206, 209) !important;
+  height: 10px !important;
+  width: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: radial-gradient(#00CED1, rgba(0, 206, 209, 0.1450980392)) !important;
+  height: 12px !important;
+  width: 12px !important;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media (max-width: 1024px) {
   .bg-navy-green-responsive {
     background: linear-gradient(to bottom, #05092E, #00CED1);
