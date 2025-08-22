@@ -48,7 +48,8 @@ $spacers: map-merge(
     23: 23px,
     28: 28px,
     39: 39px,
-    18: 18px
+    18: 18px,
+    110: 110px
   )
 );
 
@@ -70,7 +71,8 @@ $utilities: map-merge(
             178: 178px,
             29: 29px,
             306: 306px,
-            10: 10px
+            10: 10px,
+            48: 48px
           )
         ),
       ),
@@ -85,7 +87,8 @@ $utilities: map-merge(
             59: 59px,
             29: 29px,
             528: 528px,
-            10: 10px
+            10: 10px,
+            48: 48px
           )
         ),
       ),
@@ -179,10 +182,6 @@ $enable-gradients: true;
   align-items: stretch;
 }
 
-.swiper-pagination {
-  margin-bottom: -30px;
-}
-
 .animated-text {
   animation: rotate360 20s linear infinite;
 }
@@ -197,6 +196,17 @@ $enable-gradients: true;
   background: radial-gradient(#00CED1, #00ced125) !important;
   height: 12px !important;
   width: 12px !important;
+}
+
+.header {
+  transition: all 0.2s ease !important;
+  z-index: 999 !important;
+}
+
+.scrolled-header {
+  background: #05092E !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
 
 @keyframes rotate360 {
