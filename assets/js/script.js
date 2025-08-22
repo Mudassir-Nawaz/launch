@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     );
 
+    document.querySelector('.scrollToTop').addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // smooth scroll effect
+        });
+    });
+
     AOS.init();
 
     const pricingSwiper = new Swiper('.pricingSwiper', {
