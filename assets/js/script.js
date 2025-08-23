@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('.header');
+    const offcanvasElement = document.getElementById("mainMenu");
+    const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
 
     window.addEventListener('scroll', () => {
         if (window.scrollY <= 15) {
@@ -15,6 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
           top: 0,
           behavior: 'smooth' // smooth scroll effect
         });
+    });
+
+    offcanvasElement.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        offcanvas.hide();
+      });
     });
 
     AOS.init();
