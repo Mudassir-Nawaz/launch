@@ -167,7 +167,7 @@ $enable-gradients: true;
 }
 
 .scroll-margin {
-  scroll-margin-top: 10px;
+  scroll-margin-top: 100px;
 }
 
 .hero {
@@ -207,6 +207,20 @@ $enable-gradients: true;
   background: #05092E !important;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
+}
+
+.menu-entry {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-entry::before {
+  background: #00CED1;
+  height: 30px;
+  width: 30px;
+  // border-radius: calc(1px * infinity);
+  position: absolute;
+  inset: 0;
 }
 
 @keyframes rotate360 {
