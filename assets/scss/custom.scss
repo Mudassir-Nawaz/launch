@@ -211,16 +211,20 @@ $enable-gradients: true;
 
 .menu-entry {
   position: relative;
-  display: inline-block;
 }
 
-.menu-entry::before {
-  background: #00CED1;
-  height: 30px;
-  width: 30px;
-  // border-radius: calc(1px * infinity);
+.menu-entry a {
+  position: relative;
+}
+
+.menu-entry .active {
   position: absolute;
-  inset: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: calc(1px * infinity);
+  background: #00CED1;
+  top: 0;
+  left: calc(-25px / 3);
 }
 
 @keyframes rotate360 {

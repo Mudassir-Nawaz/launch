@@ -21769,15 +21769,20 @@ textarea.form-control-lg {
 
 .menu-entry {
   position: relative;
-  display: inline-block;
 }
 
-.menu-entry::before {
-  background: #00CED1;
-  height: 30px;
-  width: 30px;
+.menu-entry a {
+  position: relative;
+}
+
+.menu-entry .active {
   position: absolute;
-  inset: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: calc(infinity * 1px);
+  background: #00CED1;
+  top: 0;
+  left: -8.3333333333px;
 }
 
 @keyframes rotate360 {
